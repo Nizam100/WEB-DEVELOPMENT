@@ -66,5 +66,59 @@
 
 // console.log((10 > 5 && 6 > 3) || (3 > 6 && 2 > 1));
 //    true          ||       false              ==> Final Output: true
+// let a = 10;
+// let b = 15;
+
+// if (!(a > b)) {
+//   console.log("a is greater than b");
+// }
+
+// if (true) {
+//   console.log("first block will be executed");
+// } else {
+//   console.log("Second block will be executed");
+// }
+
+// if (false) {
+//   console.log("hey");
+// } else if (false) {
+//   console.log("Hello");
+// } else if (true) {
+//   console.log("Javascript");
+// } else if (false) {
+//   console.log("Block will be executed");
+// } else if (false) {
+//   console.log("Execution stopped above");
+// } else {
+//   console.log("else will be executed");
+// }
 
 // g. -----------Loops (For loop and while loop)----------:
+
+// let i = 1;
+
+// while (i <= 10) {
+//   console.log("hello");
+//   i++;
+// }
+
+// let sum = 0;
+
+// let i = 1;
+
+// while (i <= 10) {
+//   sum = sum + i;
+//   i++;
+// }
+
+// console.log(sum);
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(i);
+// }
+
+
+
+
+
+
