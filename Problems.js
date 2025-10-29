@@ -22,7 +22,7 @@
 // }
 // console.log(sum);
 
-//---------------------------------- 
+//----------------------------------
 
 // Problem 3(Count of all numbers greater than 50):
 // let count = 0;
@@ -37,7 +37,7 @@
 
 // -----------------------------------------------
 
-// Problem 4(Print result of a student based on marks): 
+// Problem 4(Print result of a student based on marks):
 // let arr = [12, 45, 7, 89, 23];
 // for (let i = 0; i < arr.length; i++) {
 //   if (arr[i] >= 35) {
@@ -64,4 +64,53 @@
 // }
 // console.log(sum);
 
+// ----------------Problem 6(Finding second largest digit in an array)--------------------:
 
+// let arr = [5, 7, 2, 8, 10, 9];
+
+// let max = -Infinity; //8
+
+// let secondMax = -Infinity; //7
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     secondMax = max;
+//     max = arr[i];
+//   } else if (arr[i] > secondMax && arr[i] < max) {
+//     secondMax = arr[i];
+//   }
+// }
+
+// console.log(secondMax);
+
+// DRY RUN OF ABOVE QUESTION:
+// 1. arr[i] => 5 => 5 > -Infinity true
+//secondMax = -Infinity
+//max = 5
+
+// 2. arr[i] => 7 => 7 > 5 true
+//secondMax = 5
+//max = 7
+
+// ------------------------------------------------------------------------------
+
+// -------------Problem 7(Finding total marks of each student i.e, each array)-------------:
+
+// let marks = [
+//   [45, 67, 81],  
+//   [88, 72, 90],  
+//   [60, 75, 68], 
+// ];
+
+// let totalMarks = [];
+
+// for (let i = 0; i < marks.length; i++) {
+//   let student = marks[i];
+//   let sum = 0;
+//   for (let j = 0; j < student.length; j++) {
+//     sum = sum + student[j];
+//   }
+//   totalMarks.push(sum);
+// }
+
+// console.log(totalMarks);
