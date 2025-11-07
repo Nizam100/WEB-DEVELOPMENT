@@ -494,6 +494,28 @@ function sum(a){
 let result = sum(2);
 // console.log(a);
 
-console.log(result);
+// console.log(result);
+
+let student = {
+    name :"nizam",
+    age:14,
+    marks: 344,
+
+
+
+}
+console.log(student.marks)
+student.address ="check pora " 
+console.log(student)
+
+student.address = " nowgam"
+
+console.log(student.address)
+
+delete student.address 
+
+console.log(student);
+
+
 
 
