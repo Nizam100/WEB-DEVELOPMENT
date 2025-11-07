@@ -364,9 +364,3 @@
 //   console.log(student[0]);
 // }
 
-// console.log("hey");
-
-
-
-
-

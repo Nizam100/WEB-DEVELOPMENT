@@ -51,15 +51,16 @@
 // Variables declared inside a function are not accessible outside it.
 
 // function sumOfArr(arr) {
-//   let sum = 0; 
+//   let sum = 0;
 //   for (let i = 0; i < arr.length; i++) {
 //     sum = sum + arr[i];
 //   }
 //   return sum;
 // }
 
-
 // let arr = [4, 2, 5, 6, 9, 10];
 
 // let result = sumOfArr(arr);
 // console.log(result);
+
+

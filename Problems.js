@@ -97,9 +97,9 @@
 // -------------Problem 7(Finding total marks of each student i.e, each array)-------------:
 
 // let marks = [
-//   [45, 67, 81],  
-//   [88, 72, 90],  
-//   [60, 75, 68], 
+//   [45, 67, 81],
+//   [88, 72, 90],
+//   [60, 75, 68],
 // ];
 
 // let totalMarks = [];
@@ -114,3 +114,209 @@
 // }
 
 // console.log(totalMarks);
+
+// ---------------PROBLEMS USING FUNCTIONS--------------------------------------:
+
+// Problem 1: Write a function sumOfEvens(arr) that returns
+//            he sum of all even numbers in an array:
+
+// let arr = [4, 2, 5, 6, 9, 10];
+
+// function sumOfEvens(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//       sum = sum + arr[i];
+//     }
+//   }
+//   return sum;
+// }
+
+// let answer = sumOfEvens(arr);
+// console.log(answer);
+
+// ---------------------------------------------------------
+
+// Problem 2: Write a function reverseString(str) that returns
+//            the reversed version of the input string
+
+// function reverseString(str) {
+//   let result = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     result = result + str[i];
+//   }
+//   return result;
+// }
+
+// let answer = reverseString("leetcode");
+// console.log(answer);
+
+// -------------------------------------------------------------------
+
+// Problem 3: Write a function isPalindrome(str) that checks if the
+//            given string is a palindrome.
+
+// let str = "racecar";
+
+// function isPalindrome(str) {
+//   let reversed = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversed += str[i]; //=> reversed = reversed + str[i]
+//   }
+//   if (reversed === str) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// let result = isPalindrome(str);
+// console.log(result);
+
+// -------------------------------------------------------------------------
+
+// let arr = [12, 8, 7, 5, 13];
+
+// Problem 4: Write a function checkPrime(arr) to check if the
+//            numbers in the given array are primw or not.
+
+// function isPrime(n) {
+//   for (let i = 2; i < n; i++) {
+//     if (n % i === 0) {
+//       return false;
+//     } else {
+//       return true;
+//     }
+//   }
+// }
+
+// function checkPrime(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     let result = isPrime(arr[i]);
+//     if (result === true) {
+//       console.log(arr[i] + " is a prime number");
+//     } else {
+//       console.log(arr[i] + " is not a prime number");
+//     }
+//   }
+// }
+
+// checkPrime(arr);
+
+// Problem 5: Write a function finfLongestString(arr) to find
+//            longest word in string.
+
+// let arr = ["abc", "bacd", "aya", "asif", "burhaan"];
+
+// function findLongestString(arr) {
+//   let maxLen = 0;
+//   let result = "";
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].length > maxLen) {
+//       maxLen = arr[i].length;
+//       result = arr[i];
+//     }
+//   }
+//   return result;
+// }
+
+// let answer = findLongestString(arr);
+// console.log(answer);
+
+// --------------------------PROBLEMS ON OBJECTS AND ARRAYS COMBINED---------------------------
+
+// Problem 1: Count the number of keys in an object.
+
+// let user = {
+//   name: "Ali",
+//   age: 22,
+//   city: "Srinagar",
+//   isStudent: true,
+// };
+
+// user.address = "Parraypora";
+
+// let count = 0;
+
+// for(let key in user){
+//     count++;
+// }
+
+// console.log(count);
+
+// -----------------------------------------------------------------------------------
+
+// Problem 2: Check if a particular key exists in an object
+
+// let user = {
+//   name: "Ali",
+//   age: 22,
+//   city: "Srinagar",
+//   isStudent: true,
+// };
+
+// function hasKey(obj, toCheck) {
+//   for (let key in obj) {
+//     if (key === toCheck) {
+//       console.log(key, "exists in user");
+//     }
+//   }
+
+//   //   return toCheck in obj;
+// }
+
+// hasKey(user, "city");
+
+// ------------------------------------------------------------------------------
+
+// Problem 3: Convert object to an array
+
+// let obj = {
+//   name: "Amaan",
+//   age: 21,
+//   course: "Web Dev",
+// };
+
+// let arr = Object.entries(obj);
+// console.log(arr);
+
+// ----------------------------------------------------------------------------------
+
+// Problem 4: Find the highest scorer in object
+
+// let students = {
+//   Amaan: 85,
+//   Asif: 92,
+//   Kabir: 88,
+// };
+
+// function findHighestScorer(obj) {
+//   let topper = "";
+//   let highest = 0;
+//   for (let key in obj) {
+//     if (obj[key] > highest) {
+//       highest = obj[key];
+//       topper = key;
+//     }
+//   }
+//   return topper;
+// }
+
+// let higestMarksStudent = findHighestScorer(students);
+// console.log(higestMarksStudent);
+
+// ------------------------------------------------------------------------------------------
+
+// Problem 5: How tp create methods in an object. 
+
+// let obj1 = {
+//   name: "Kabir",
+//   age: 22,
+//   greeting: function () {
+//     console.log("Welcome to the course of Web Dev", this.name);
+//   },
+// };
+
+// obj1.greeting();
+
+
