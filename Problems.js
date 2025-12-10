@@ -307,7 +307,7 @@
 
 // ------------------------------------------------------------------------------------------
 
-// Problem 5: How tp create methods in an object. 
+// Problem 5: How tp create methods in an object.
 
 // let obj1 = {
 //   name: "Kabir",
@@ -318,5 +318,3 @@
 // };
 
 // obj1.greeting();
-
-
